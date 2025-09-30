@@ -1,6 +1,21 @@
 # REELAI app
 - create react app
 - configured tailwind css
+- Header
+- Routing of App
+- Login Form
+- Sign up Form
+- Form validation
+- useRef hook
+- Firebase Setup
+- Deploying our app to production
+- Create Signup user account
+- Implement Sign In user api
+- created  redux store with user slice 
+- Implemented Sign out
+- Update Profile
+- Fetch from Movies
+
 
 # Features
 - Login/Signup
