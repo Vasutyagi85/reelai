@@ -10,6 +10,7 @@ import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { addUser, removeUser } from '../utils/userSlice'
 
+
 const Login = () => {
 
   
@@ -46,16 +47,17 @@ const Login = () => {
 
     updateProfile(user, {
     displayName: name.current.value, 
-    photoURL:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4YreOWfDX3kK-QLAbAL4ufCPc84ol2MA8Xg&s"
-    }).
-    then((userCredential) => {
+    photoURL:avatar,
+    })
+    .then((userCredential) => {
       const{uid,email,displayName,photoURL}=auth.currentUser;
       //instead of taking value from the old user it should be taken from updated user which is currentUser 
       dispatch(addUser({
         uid:uid,
         email:email,
         displayName:displayName,
-        photoURL:photoURL})
+        photoURL:photoURL
+      })
       );
       Navigate("/browse")
 
@@ -75,7 +77,6 @@ const Login = () => {
       signInWithEmailAndPassword(auth,email.current.value,password.current.value)
       .then((userCredential) => {
       const user = userCredential.user;
-      Navigate("./browse")
     })
       .catch((error) => {
       const errorCode = error.code;

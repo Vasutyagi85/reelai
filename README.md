@@ -15,7 +15,20 @@
 - Implemented Sign out
 - Update Profile
 - Fetch from Movies
-
+- Bugfix: signup the user displayname and profile picture update
+- Bugfix:if the user is not logged in redirect/browse to login page and vice versa
+- unsubscribe to onauthstatechanged callback
+- add hardcoded values in constant file
+- register for a tmdb api & access token
+- get data from now playing movies list api
+- CUSTOM HOOK FOR NOW PLAYING MOVIES
+- Create Movieslices
+- Update Store with movies data
+- Planning for Maincontiner & secondary container
+- fetch data for trailer video
+- update store with trailer video data
+- embedded the youtube video and make it autoplay and mute
+- tailwind classes to make it look awesome
 
 # Features
 - Login/Signup
